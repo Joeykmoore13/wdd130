@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background-color: #298EBD;
+}
+h1, p{
+    color: white;
+}
+.first{
+    max-width: 30%;
+    margin: 0 auto;
+}
+.second{
+    padding-bottom: 20px;
+}
+ol{
+    width: 20%;
+    text-align: left;
+    margin: 0 auto;   
+}
+img{
+    padding-top: 20px;
+    max-width: 20%;
+}
+h2{
+    color:white;
+    max-width: 30%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.lowtext{
+    color:black;
+}
+h1:hover{
+    color:black;
+}
