@@ -50,11 +50,12 @@ header{
     color: black;
 }
 footer{
-    background: rgba(20,30,13,.7)  
+    background: rgba(20,30,13,.7);
+    color: #fcfbfb; 
 }
 footer a{
-    color: #fcfbfb;
     text-decoration: none;
+    color: #fcfbfb;
 }
 footer a hover{
     color: #4f9ee4;
