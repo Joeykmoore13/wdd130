@@ -183,6 +183,33 @@ footer .social img{
 #hero-img{
     width: 100%;
 }
+#heading{
+    margin-left:100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.rivername{
+    margin-left:100px;
+    margin-bottom: 25px;
+}
+.riverimg{
+    width: 500px;
+    margin-left: 50px;
+    margin-right:50px;
+    /* border: 5px solid  black; */
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.riverblock{
+    display:flex;
+    background-color: #dbc180;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right:50px;
+    padding-right: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top:50px;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

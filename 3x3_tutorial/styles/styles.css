@@ -1,0 +1,25 @@
+header{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.logoref{
+    font-size: 0;
+}
+#logo{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #b00c00;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #FF9C00;
+    color:black;
+}
