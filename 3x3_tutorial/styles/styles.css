@@ -23,3 +23,23 @@ nav a:hover{
     background-color: #FF9C00;
     color:black;
 }
+body{
+    background-color: #F8FCFF;
+}
+h2{
+    margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+p{
+    margin:50px;
+    margin-left:50px;
+}
+.alg{
+    font-size: 50px;
+    font-weight: bold;
+}
+img:not(#logo){
+    margin-left:150px;
+}
