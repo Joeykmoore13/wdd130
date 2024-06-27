@@ -40,6 +40,14 @@ p{
     font-size: 50px;
     font-weight: bold;
 }
+.note{
+    background-color: yellow;
+    width:fit-content;
+    padding: 1px;
+    border: 3px solid black;
+    /* fix this so it doesnt take up so much space */
+}
 img:not(#logo){
     margin-left:150px;
+    width: 20%;
 }
