@@ -17,14 +17,22 @@
     </nav>
 </header>
 <body>
-    <h2>How to solve a Rubik's cube</h2>
-    <p>This guide is designed for anyone to be able to pick up a 3x3 Rubik's cube and solve it in just 7 steps. You don't need to have any prior experience to use this guide.</p>
-    <p class="note">The only thing you have to do before using this guide is take a look at the “How to read notation” page. Without the notation it will be incredibly difficult.</p>
+<div class="grid_border">
+<div class="borders"></div>
+<section>
+    <!-- Make the sidebar with the notation in it -->
+    <h2 class="title">How to solve a Rubik's cube</h2>
+    <hr class="line first_line">
+    <p class="opening_text">This guide is designed for anyone to be able to pick up a 3x3 Rubik's cube and solve it in just 7 steps. You don't need to have any prior experience to use this guide.</p>
+    <p class="opening_text">The only thing you have to do before using this guide is take a look at the “How to read notation” page. Without the notation it will be incredibly difficult.</p>
+
     <h2>Step 1: White cross</h2>
+    <hr class="line">
     <p>The first step in this guide is to solve a white cross. You can technically start with any color you want but this guide will start with white.</p>
     <p>The most important thing to note is the other color on the edge matters. See the pictures below.</p>
     <img src="images/incorrect_cross.png">
-    <img scr="images/correct_cross.png">
+    <img src="images/correct_cross.png">
+    <!-- ask for help with this. The image for some reason isnt being linked properly -->
 
     <p>As you can see one of the white cross pieces looks solved but the other color isn't in the correct spot. The second picture you can see both colors match.</p>
     <p>Here's a couple tips on how to insert the edges into the correct spots</p>
@@ -48,6 +56,7 @@
     <img src="images/solved_cross.png">
 
     <h2>Step 2: White corners</h2>
+    <hr class="line">
 
     <p>Our next step is to finish our first layer by putting in the corners. Much like the cross pieces the edge color does matter. Here's an example.</p>
     <img src="images/incorrect_white_corner.png">
@@ -108,6 +117,7 @@
     <p>Congrats! You now have one layer solved!</p>
 
     <h2>Step 3: Second layer</h2>
+    <hr class="line">
 
     <p>Now we are going to move on to solving the second layer. There are 2 different cases you can get for this step and both are mirrors of each other.</p>
 
@@ -124,7 +134,7 @@
 
     <p>Once your piece is set up like the first picture then do these moves</p>
 
-    <p class="alg">U’ L’ U L U F U’ F</p>
+    <p class="alg">U’ L’ U L U F U’ F'</p>
 
     <p>Use this link for a better visualization of the algorithms on this page and for some other tips like an example solve and help memorizing the algorithms.</p>
     //Add a link to another page for help on how to recognize and learn this algorithm
@@ -146,6 +156,7 @@
     <img src="images/F2L_solved.png">
 
     <h2>Step 4: Yellow cross</h2>
+    <hr class="line">
 
     <p>For this step we are going to make a cross out of the yellow pieces on top while keeping the rest of our cube solved. This step has 4 possible cases.</p>
 
@@ -176,6 +187,7 @@
     <img src="images/solved_yellow_cross.png">
 
     <h2>Step 5: Cross edges</h2>
+    <hr class="line">
 
     <p>The next step is going to be moving the yellow cross edges into their solved positions.</p>
 
@@ -194,6 +206,7 @@
     <img src="images/permuted_yellow_cross.png">
 
     <h2>Step 6: Yellow corner positions</h2>
+    <hr class="line">
 
     <p>Next we are going to move our yellow corner pieces around until they are in the correct spot. They will be twisted still but that is on purpose.</p>
 
@@ -207,6 +220,7 @@
     <p>This algorithm will move 3 corners around. To use this algorithm put a solved Corner piece in the bottom right like in the picture below.</p>
 
     <img src="images/nicklas_setup.png">
+    <!-- add arrows to the corner pieces to make it clear what the algorighm does -->
 
     <p>The bottom right corner is the only one that won't move in this step. This algorithm will move the other 3 corners around. Keep moving the corners around until they are all in the correct spot.</p>
 
@@ -217,6 +231,7 @@
     <img src="images/permuted_corners.png">
 
     <h2>Step 7: Twist yellow corners</h2>
+    <hr class="line">
 
     <p>The final step is to twist the corners that we just moved around. This is the step most people will mess up the most but just follow the moves EXACTLY and it will work just fine. For this step DO NOT rotate the cube around. The way the cube is facing matters for this step.</p>
 
@@ -243,6 +258,9 @@
     <p>Congrats! You solved a rubik's cube.</p>
 
     <p>For help on memorizing the algorithms, more visual forms of the algorithms, or an example solve see the extra tips page.</p>
+</section>
+<div class="borders"></div>
+</div>
 </body>
 <footer>
     <p>Puzzle Masters &copy; 2024 - Joey Moore</p>
