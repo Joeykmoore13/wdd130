@@ -18,7 +18,51 @@
 </header>
 <body>
 <div class="grid_border">
-<div class="borders"></div>
+<div class="border_one"></div>
+
+<div id="button_div">
+    <button class="openbtn" onclick="openNav()">&#9776; Notation</button>
+</div>
+<div id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img class="sidebar_image" src="images/R.png">
+    <p class="sidebar_text">R'</p>
+    <img class="sidebar_image" src="images/R2.png">
+    <p class="sidebar_text">R2</p>
+    <img class="sidebar_image" src="images/R'.png">
+    <p class="sidebar_text">R'</p>
+    <img class="sidebar_image" src="images/F.png">
+    <p class="sidebar_text">F</p>
+    <img class="sidebar_image" src="images/F2.png">
+    <p class="sidebar_text">F2</p>
+    <img class="sidebar_image" src="images/F'.png">
+    <p class="sidebar_text">F'</p>
+    <img class="sidebar_image" src="images/U.png">
+    <p class="sidebar_text">U</p>
+    <img class="sidebar_image" src="images/U2.png">
+    <p class="sidebar_text">U2</p>
+    <img class="sidebar_image" src="images/U'.png">
+    <p class="sidebar_text">U'</p>
+    <img class="sidebar_image" src="images/L.png">
+    <p class="sidebar_text">L</p>
+    <img class="sidebar_image" src="images/L2.png">
+    <p class="sidebar_text">L2</p>
+    <img class="sidebar_image" src="images/L'.png">
+    <p class="sidebar_text">L'</p>
+    <img class="sidebar_image" src="images/D.png">
+    <p class="sidebar_text">D</p>
+    <img class="sidebar_image" src="images/D2.png">
+    <p class="sidebar_text">D2</p>
+    <img class="sidebar_image" src="images/D'.png">
+    <p class="sidebar_text">D'</p>
+    <img class="sidebar_image" src="images/B.png">
+    <p class="sidebar_text">B</p>
+    <img class="sidebar_image" src="images/B2.png">
+    <p class="sidebar_text">B2</p>
+    <img class="sidebar_image" src="images/B'.png">
+    <p class="sidebar_text">B'</p>
+</div>
+
 <section>
     <!-- Make the sidebar with the notation in it -->
     <h2 class="title">How to solve a Rubik's cube</h2>
@@ -136,8 +180,8 @@
 
     <p class="alg">U’ L’ U L U F U’ F'</p>
 
-    <p>Use this link for a better visualization of the algorithms on this page and for some other tips like an example solve and help memorizing the algorithms.</p>
-    //Add a link to another page for help on how to recognize and learn this algorithm
+    <p class="note">Note: Use this <a href="notation_page/index.html">link</a> for a better visualization of the algorithms on this page and for some other tips like help memorizing the algorithms.</p>
+    <!-- Add a link to another page for help on how to recognize and learn this algorithm -->
 
     <p>The second case is the same as the first but from the right side. It looks like this</p>
 
@@ -259,7 +303,7 @@
 
     <p>For help on memorizing the algorithms, more visual forms of the algorithms, or an example solve see the extra tips page.</p>
 </section>
-<div class="borders"></div>
+<div class="border_two"></div>
 </div>
 </body>
 <footer>
@@ -267,4 +311,32 @@
     <p><a href="site-plan.html">Site Plan</a></p>
     <p>Images sourced from <a href="https://rubikscu.be/">https://rubikscu.be/</a></p>
 </footer>
+<script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "15%";
+      document.getElementById("sidebar").style.border = "7px solid black";
+    }
+    
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+      document.getElementById("sidebar").style.border = "none"
+    }
+
+    document.getElementById("button_div").className = "button_div_relative";
+    window.onscroll = function() {sidebarButton()}
+
+    function sidebarButton(){
+        if (document.documentElement.scrollTop > 87) {
+            document.getElementById("button_div").className = "button_div_fixed";
+        } else {
+            document.getElementById("button_div").className = "button_div_relative";
+            var logoheight = document.querySelector("#logo");
+
+            var logoheight = document.querySelector("#logo");
+            var h;
+            h = document.getElementById("button_div").style.top = logoheight.clientHeight;
+            // ask bro. Christenson how to do this correctly
+        }
+    }
+</script>
 </html>
