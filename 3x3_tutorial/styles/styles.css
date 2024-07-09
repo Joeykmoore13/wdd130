@@ -1,3 +1,6 @@
+html, body{
+    overflow-x: hidden;
+}
 header{
     display: grid;
     grid-template-columns: 25% auto;
@@ -200,9 +203,14 @@ img:not(#logo):not(.sidebar_image):not(.move_image){
     height: 120px;
 }
 .move_image{
-    height: 80px;
+    height: 60px;
 }
 .openbtn{
     font-size: .5em;
+}
+#button_div{
+    z-index: 3;
+    right: 25px;
+    width: 10%;
 }
 }
