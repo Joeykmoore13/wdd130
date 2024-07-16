@@ -141,7 +141,9 @@ p{
 img:not(#logo):not(.sidebar_image):not(.move_image){
     margin-left: 15%;
     height:200px;
+    width: 200px;
     border: 3px solid black;
+    margin-right: 100%;
 }
 .notation_grid{
     display: grid;
@@ -187,6 +189,7 @@ footer p{
 @media screen and (max-width: 1000px){
     .move_image{
         height: 150px;
+        width: 150px;
     }
     }
 @media screen and (max-width: 800px) {
@@ -201,9 +204,11 @@ h2 {
 }
 img:not(#logo):not(.sidebar_image):not(.move_image){
     height: 120px;
+    width: 120px;
 }
 .move_image{
     height: 60px;
+    width: 60px;
 }
 .openbtn{
     font-size: .5em;
@@ -212,5 +217,8 @@ img:not(#logo):not(.sidebar_image):not(.move_image){
     z-index: 3;
     right: 25px;
     width: 10%;
+}
+footer p{
+    margin: 6%;
 }
 }
