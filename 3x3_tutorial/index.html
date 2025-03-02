@@ -1,347 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-<header>
-    <a class=logoref href="index.html"><img id="logo" src="images/Puzzle-Masters-logo.png" alt="puzzle masters logo"></a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="notation_page/index.html">Notation</a>
-        <a href="tips_page/index.html">Beginner tips/tricks</a>
-        <a href="intermediate_methods/index.html">Intermediate techniques (WIP)</a>
-        <a href="advanced_methods/index.html">Advanced techniques (WIP)</a>
-        <!-- Link to the images site -->
-        <!-- https://rubikscu.be/ -->
-    </nav>
-</header>
+    <header>
+        <div id = logo_fill>
+            <a class=logoref href="index.html"><img id="logo" src="images/Puzzle-Masters-logo.png" alt="puzzle masters logo"></a>
+        </div>
+        <nav>
+            <a class="current" href="index.html">Home</a>
+            <a href="notation_page.html">Notation</a>
+            <a href="tips_page.html">Beginner tips/tricks</a>
+            <a href="intermediate_methods.html">Intermediate techniques (WIP)</a>
+            <a href="advanced_methods.html">Advanced techniques (WIP)</a>
+            <!-- Link to the images site -->
+            <!-- https://rubikscu.be/ -->
+        </nav>
+    </header>
 
     <div class="grid_border">
-    <div class="border_one"></div>
+        <div class="border_one"></div>
 
-    <div id="button_div">
-        <button class="openbtn" onclick="openNav()">&#9776; Notation</button>
+        <div id="button_div">
+            <button class="openbtn" onclick="openNav()">&#9776; Notation</button>
+        </div>
+        <div id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img class="sidebar_image" src="images/R.png" alt="r move image">
+            <p class="sidebar_text">R</p>
+            <img class="sidebar_image" src="images/R2.png" alt="r2 move image">
+            <p class="sidebar_text">R2</p>
+            <img class="sidebar_image" src="images/R'.png" alt="r' move image">
+            <p class="sidebar_text">R'</p>
+            <img class="sidebar_image" src="images/F.png" alt="f move image">
+            <p class="sidebar_text">F</p>
+            <img class="sidebar_image" src="images/F2.png" alt="f2 move image">
+            <p class="sidebar_text">F2</p>
+            <img class="sidebar_image" src="images/F'.png" alt="f' move image">
+            <p class="sidebar_text">F'</p>
+            <img class="sidebar_image" src="images/U.png" alt="u move image">
+            <p class="sidebar_text">U</p>
+            <img class="sidebar_image" src="images/U2.png" alt="u move image">
+            <p class="sidebar_text">U2</p>
+            <img class="sidebar_image" src="images/U'.png" alt="u' move image">
+            <p class="sidebar_text">U'</p>
+            <img class="sidebar_image" src="images/L.png" alt="l move image">
+            <p class="sidebar_text">L</p>
+            <img class="sidebar_image" src="images/L2.png" alt="l2 move image">
+            <p class="sidebar_text">L2</p>
+            <img class="sidebar_image" src="images/L'.png" alt="l' move image">
+            <p class="sidebar_text">L'</p>
+            <img class="sidebar_image" src="images/D.png" alt="d move image">
+            <p class="sidebar_text">D</p>
+            <img class="sidebar_image" src="images/D2.png" alt="d2 move image">
+            <p class="sidebar_text">D2</p>
+            <img class="sidebar_image" src="images/D'.png" alt="d' move image">
+            <p class="sidebar_text">D'</p>
+            <img class="sidebar_image" src="images/B.png" alt="b move image">
+            <p class="sidebar_text">B</p>
+            <img class="sidebar_image" src="images/B2.png" alt="b2 move image">
+            <p class="sidebar_text">B2</p>
+            <img class="sidebar_image" src="images/B'.png" alt="b' move image">
+            <p class="sidebar_text">B'</p>
+        </div>
+
+        <section>
+            <h2 class="title">How to solve a Rubik's cube</h2>
+            <hr class="line first_line">
+            <p class="opening_text">This guide is designed for anyone to be able to pick up a 3x3 Rubik's cube and solve
+                it in just 7 steps. You don't need to have any prior experience to use this guide.</p>
+            <!-- Rewrite the opening steps to not use notation. Only start using notation when doing the yellow cross -->
+            <!-- Add links to the algorithms so they can be clicked and it takes them to a page with an animation demonstrating what the moves are -->
+            <p class="opening_text note">The only thing you have to do before using this guide is take a look at the
+                “How to read notation” page. Without the notation it will be incredibly difficult. There is a notation
+                reminder box in the top right corner of this page if you need it during the tutorial</p>
+
+            <!-- <p class ="opening_text">Before we start we need to understand some terms. There are 3 types of pieces on a Rubik's cube. Centers, edges, and corners. In the image below a center is circled in blue, and edge in red, and a corner in orange.</p -->
+            <!-- Make an image that fills the requirements for the above paragraph -->
+
+            <h2>Step 1: White cross</h2>
+            <hr class="line">
+            <p>The first step in this guide is to solve a white cross. You can technically start with any color you want
+                but this guide will start with white.</p>
+            <p>The most important thing to note is the other color on the edge matters. See the pictures below.</p>
+            <p>The gray pieces pieces in all of the images are placeholder colors and it doesn't matter for that step what colors they actually are.</p>
+            <img src="images/incorrect_cross.png" alt="image of an incorrect white cross">
+            <img src="images/correct_cross.png" alt="image of a correct white cross">
+
+
+            <p>As you can see in the first picture, one of the white cross pieces looks solved but the other color isn't
+                in the correct spot. The second picture you can see both colors match.</p>
+            <!-- Add a colored circle to the image to make it more clear what is being pointed out -->
+            <p>Here's a couple tips on how to insert the edges into the correct spots</p>
+
+            <img src="images/F2_cross_1.png" alt="cross insert image 1">
+            <img src="images/F2_cross_2.png" alt="cross insert image 2">
+
+            <p>This is the best way to put edge pieces in. Using the U face you can align the cross piece with its other
+                color and then do an F2 to insert the cross piece.</p>
+
+            <p class="note">Note: For the very first picture above white was facing up but for the rest of the solve
+                keep the white side facing down</p>
+            <p class="note">Note: In all of the the images in this tutorial the side to the left will be the side that
+                is facing us. In this case the red side is facing us.</p>
+
+            
+            <img src="images/fliped_cross_piece.png" alt="flipped cross piece image">
+            <!-- Fix this image. It is off center -->
+
+            <!-- Add explanations for what to do if the edge is in an F2L slot -->
+            <p>This is the other possible case to get. The best way to do this is to find a cross piece that isnt solved
+                yet, turn the cube so the cross piece's center color is facing you, line up the piece like this picture
+                above and do these moves. Watch where the piece goes while to do the moves to see how it works.</p>
+            <p class="alg">U’ R’ F R</p>
+
+            <p>As you can see the piece was flipped over and put in the correct spot and all of our other cross pieces
+                are still correct.</p>
+
+            <p>Your cube should look something like this</p>
+            <img src="images/solved_cross.png" alt="solved cross image">
+            <!-- Fix this image. It is off center -->
+
+            <h2>Step 2: White corners</h2>
+            <hr class="line">
+
+            <p>Our next step is to finish our first layer by putting in the corners. Much like the cross pieces the edge
+                color does matter. Here's an example.</p>
+            <img src="images/incorrect_white_corner.png" alt="incorrect white corner image">
+            <img src="images/correct_white_corner.png" alt="correct white corner image">
+            <!-- Fix these pictures so they have white facing down -->
+
+            <p>you can see the first picture the corner is in the wrong spot. The edge colors don't match up to the
+                cross pieces around it. The second picture is correct though because the edge colors match up to the
+                cross pieces around it.</p>
+
+            <p>Here's a couple of ways to put in the corners. The first is pretty simple and it looks like this.</p>
+
+            <!-- Fix this whole section. Explain that if the corner is on the right to first move it to the left and vice versa. Dont use notation for this section. Have examples for both left and right corner cases. -->
+
+            <img src="images/R_U'_R_setup.png" alt="corner insert setup image">
+
+            <p>First we are going to move the corner out of the way like this</p>
+
+            <img src="images/R_U'_R_move_one.png" alt="corner insert move 1 image">
+            <!-- This sounds like it is missing an image. Like stated above, just redo this entire section -->
+            <p>The reason we do this is becase we need to move our cross piece up like this. If the corner was in the
+                starting spot then it would move in a weird place and we couldn't put it where we want it</p>
+            <p>The important thing about this is to notice that to insert the corner you are going to have to move a
+                cross piece. It is completely impossible to put a corner in without moving a cross piece. In this case
+                we are going to lift our cross edge up like this</p>
+
+            <img src="images/R_U'_R_move_two.png" alt="corner insert move 2 image">
+
+            <p>Then we are going to move our corner right next to the cross piece to ‘stick’ the white ‘stickers’
+                together.</p>
+
+            <img src="images/R_U'_R_move_three.png" alt="corner insert move 3 image">
+
+            <p>Then we are going to put both pieces back into the first layer like this</p>
+
+            <img src="images/R_U'_R_solved.png" alt="corner insert solved image">
+
+            <p>This also works on the opposite side which looks like this</p>
+
+            <img src="images/L_U'_L_setup.png" alt="second corner insert setup image">
+
+            <!-- Redo this whole section too. Sounds way too confusing using green for F -->
+            <p>This case works the exact same as the previous one but from the left side. In this case, make your green
+                face your F face, then do these moves. Watch where the corner goes to get an idea of what we are doing
+            </p>
+            <p class="alg">U' L' U L</p>
+
+            <p>The second case looks like this</p>
+
+            <img src="images/marked_U_facing_corner.png" alt="up facing corner image">
+            <!-- (//Not above it's target slot)  -->
+
+            <p>The previous cases had the corner facing the sides but this one is facing up which means the previous
+                method won't work for this corner. The easiest thing to do is this: Get the corner above the spot it
+                needs to go like in the image above</p>
+            <p>Then do these moves.</p>
+
+            <!-- Explain why we do these moves and how they work -->
+
+            <p class="alg">R U2 R’</p>
+
+            <p>Now the corner should be facing the side and you can just treat it like one of the above cases.</p>
+
+            <p>If the corner is in the wrong slot like in this picture</p>
+
+            <img src="images/wrong_corner_slot.png" alt="incorrect corner slot image">
+
+            <!-- This explanation sucks a lot. Fix it -->
+            <p>Then just put a different corner into the slot using the above methods and solve it like normal.</p>
+
+            <p>Your cube should look something like this now</p>
+
+            <img src="images/solved_white_layer.png" alt="white layer solved image">
+
+            <p>Congrats! You now have one layer solved!</p>
+
+            <h2>Step 3: Second layer</h2>
+            <hr class="line">
+
+            <p>Now we are going to move on to solving the second layer. There are 2 different cases you can get for this
+                step and both are very similar. One is for the left side and one is for the right side.</p>
+
+            <p>The first one looks like this</p>
+            <!-- Explain this using the left/right method and dont use notation. Start by moving it in the opposite direction, much like we did for the corners. Use a sledge hammer here as well instead of normal insert. Add normal insert into the tips page or F2L page instead. -->
+
+            <img src="images/F2L_left.png" alt="f2l left case image">
+
+            <p>For this one make sure the center color and edge colors are the same like this</p>
+
+            <img src="images/marked_f2l_left.png" alt="highlighted f2l left case image">
+            <!-- Finish making this picture -->
+
+            <p>If they aren't the same then the piece won't solve correctly</p>
+
+            <p>Once your piece is set up like the first picture then do these moves</p>
+
+            <p class="alg">U’ L’ U L U F U’ F'</p>
+
+            <p class="note">Note:  I highly recomend using the <a href="tips_page.html">tips page</a> for help visualizing this algorithm. It helps a lot to understand how the algorithm works and has a very simple way to memorize it</p>
+            <!-- Possibly remove this section from the tips page and just put it all here. Makes it much easier for people to understand how the cube moves around -->
+
+            <p>The second case is the same as the first but from the right side. It looks like this</p>
+            <!-- Again explain the left/right method. Use a sledge hammer here as well instead of normal insert. Add normal insert into the tips page or F2L page instead. -->
+
+            <img src="images/F2L_right.png" alt="f2l right case image">
+
+            <p class="alg">U R U’ R’ U’ F’ U F</p>
+
+            <p>The third case is a little different. It looks like this</p>
+
+            <img src="images/F2L_fliped_edge.png" alt="f2l flipped edge case image">
+            <!-- This image is cropped a little bit too much. Make a new one to fix it -->
+
+            <!-- This explaination sucks a lot -->
+            <p>As you can see the edge is in the right spot but flipped over. To do this one we just put a different
+                edge into the slot and then solve the edge like normal. Either of the previous algorithms work for this
+                case.</p>
+            
+
+            <p>Your cube should look something like this</p>
+
+            <img src="images/F2L_solved.png" alt="solved f2l image">
+
+            <h2>Step 4: Yellow cross</h2>
+            <hr class="line">
+
+            <!-- Start using notation here. Add a link here to make it easy to find. -->
+            <p>For this step we are going to make a cross out of the yellow pieces on top while keeping the rest of our
+                cube solved. This step has 4 possible cases.</p>
+
+            <p>The first is the bar case and it looks like this</p>
+
+            <img src="images/yellow_cross_bar.png" alt="yellow cross bar image">
+            
+            <p>To solve the cross with this case make sure the bar is set horizontally like in the picture above. If the bar is
+                turned vertically then the algorithm won't work.</p>
+
+            <p class="alg">F R U R’ U’ F’</p>
+
+            <p>The second case is the L case and it looks like this</p>
+
+            <img src="images/yellow_cross_L.png" alt="yellow l case image">
+
+            <p>To solve this turn the L shaped part to the back left just like in the picture and then do the last
+                algorithm twice in a row. </p>
+
+            <p>The third case is the dot case and looks like this</p>
+
+            <img src="images/yellow_cross_dot.png" alt="yellow cross dot case image">
+
+            <p>To do this case just do the algorithm once and it will give you one of cases we talked about previously. Then solve that case like
+                normal.</p>
+
+            <p>The 4th possible case is the best one. It is just solved for you.</p>
+
+            <p>Your cube should look like this now</p>
+
+            <img src="images/solved_yellow_cross.png" alt="solved yellow crosss image">
+
+            <h2>Step 5: Cross edges</h2>
+            <hr class="line">
+
+            <p>The next step is going to be moving the yellow cross edges into their solved positions.</p>
+
+            <img src="images/unpermuted_cross.png" alt="unpermuted cross image">
+
+            <!-- Add circles to indicate which stickers we are talking about here -->
+            <!-- Actually mark the image like I said I would in the text -->
+            <p>As you can see from this picture the yellow cross is solved but the edge colors are not solved. This
+                algorithm will swap the 2 edges marked in the picture below.</p>
+
+            <img src="images/sune_edge_swap.png" alt="sune edge swap image">
+
+            <!-- Make this explaination a little clearer -->
+            <p>Using this algorithm we can solve the 4 edges. To find which edges are already solved turn the U face
+                until at least 2 edges are solved and then use this algorithm to swap edges until they are all solved.
+            </p>
+
+            <p class="alg">R U2 R’ U’ R U’ R’ (U')</p>
+
+            <p>Your cube should look something like this</p>
+
+            <img src="images/permuted_yellow_cross.png" alt="permuted yellow cross image">
+
+            <h2>Step 6: Yellow corner positions</h2>
+            <hr class="line">
+
+            <!-- Explain what I mean by twisted here -->
+            <!-- In fact, explain this whole section a little bit better -->
+            <p>Next we are going to move our yellow corner pieces around until they are in the correct spot. They will
+                be twisted still but that is on purpose.</p>
+
+            <p>Here's an example of a piece that is in the correct spot but still twisted and one that is in the wrong
+                spot.</p>
+
+            <img src="images/correct_corner.png" alt="correct corner image">
+            <img src="images/incorrect_corner.png" alt="incorrect corner image">
+
+            <p>In the first you can see that the color of the corner piece matches the sides around it which means that
+                it is in the correct spot on the cube. The second corners colors do not match the sides around it so
+                we'll have to move it.</p>
+
+            <!-- Add the now infamous circle to the image to indicate which piece is the solved piece -->
+            <p>This algorithm will move 3 corners around. To use this algorithm put a solved Corner piece in the bottom
+                right like in the picture below.</p>
+
+            <img src="images/nicklas_setup.png" alt="niklas setup image">
+            <!-- add arrows to the corner pieces to make it clear what the algorighm does -->
+
+            <p>The bottom right corner is the only one that won't move in this step. This algorithm will move the other
+                3 corners around. Keep moving the corners around until they are all in the correct spot.</p>
+
+            <p class="alg">L’ U R U’ L U R’ U'</p>
+
+            <p>Your cube should now look something like this although yours might be slightly different.</p>
+
+            <img src="images/permuted_corners.png" alt="permuted corners image">
+
+            <h2>Step 7: Twist yellow corners</h2>
+            <hr class="line">
+
+            <!-- Add some images demonstrating exactly what not to do -->
+            <!-- Explain the difference between a cube rotation and a face turn somewhere and reemphesize that here -->
+            <p>The final step is to twist the corners that we just moved around. This is the step most people will mess
+                up the most but just follow the moves EXACTLY and it will work just fine. For this step DO NOT rotate
+                the cube around. The way the cube is facing matters for this step.</p>
+
+            <p>To start twist the U face so that an unsolved corner is in the bottom right position like this</p>
+
+            <img src="images/correcct_corner_twist_setup.png" alt="corner twist setup image">
+
+            <!-- add the picture for an incorrect setup -->
+
+            <p>Then do this algorithm over and over until that corner is solved</p>
+
+            <p class="alg">R’ D’ R D</p>
+
+            <p>Once that corner is solve it will look like the rest of the cube is messed up like shown in the picture
+                down below</p>
+
+            <img src="images/twist_halfway.png" alt="twist algorithm halfway image">
+
+            <p>This is fine. Just don't rotate the cube around it it will solve itself.</p>
+
+            <!-- Add another image as an example of this -->
+            <p>Next use only U moves to put another unsolved corner in the bottom right spot and use the algorithm over
+                and over until that corner solves. Repeat for all the corners in the U face. Once the last corner is
+                solved the rest of the cube should also be solved.</p>
+
+            <img src="images/solved.png" alt="solve rubik's cube image">
+
+            <p>Congrats! You solved a rubik's cube.</p>
+
+            <p>For help on memorizing the algorithms, more visual forms of the algorithms, or an example solve see the
+                extra tips page.</p>
+        </section>
+        <div class="border_two"></div>
     </div>
-    <div id="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img class="sidebar_image" src="images/R.png" alt="r move image">
-        <p class="sidebar_text">R</p>
-        <img class="sidebar_image" src="images/R2.png" alt="r2 move image">
-        <p class="sidebar_text">R2</p>
-        <img class="sidebar_image" src="images/R'.png" alt="r' move image">
-        <p class="sidebar_text">R'</p>
-        <img class="sidebar_image" src="images/F.png" alt="f move image">
-        <p class="sidebar_text">F</p>
-        <img class="sidebar_image" src="images/F2.png" alt="f2 move image">
-        <p class="sidebar_text">F2</p>
-        <img class="sidebar_image" src="images/F'.png" alt="f' move image">
-        <p class="sidebar_text">F'</p>
-        <img class="sidebar_image" src="images/U.png" alt="u move image">
-        <p class="sidebar_text">U</p>
-        <img class="sidebar_image" src="images/U2.png" alt="u move image">
-        <p class="sidebar_text">U2</p>
-        <img class="sidebar_image" src="images/U'.png" alt="u' move image">
-        <p class="sidebar_text">U'</p>
-        <img class="sidebar_image" src="images/L.png" alt="l move image">
-        <p class="sidebar_text">L</p>
-        <img class="sidebar_image" src="images/L2.png" alt="l2 move image">
-        <p class="sidebar_text">L2</p>
-        <img class="sidebar_image" src="images/L'.png" alt="l' move image">
-        <p class="sidebar_text">L'</p>
-        <img class="sidebar_image" src="images/D.png" alt="d move image">
-        <p class="sidebar_text">D</p>
-        <img class="sidebar_image" src="images/D2.png" alt="d2 move image">
-        <p class="sidebar_text">D2</p>
-        <img class="sidebar_image" src="images/D'.png" alt="d' move image">
-        <p class="sidebar_text">D'</p>
-        <img class="sidebar_image" src="images/B.png" alt="b move image">
-        <p class="sidebar_text">B</p>
-        <img class="sidebar_image" src="images/B2.png" alt="b2 move image">
-        <p class="sidebar_text">B2</p>
-        <img class="sidebar_image" src="images/B'.png" alt="b' move image">
-        <p class="sidebar_text">B'</p>
-    </div>
 
-    <section>
-        <h2 class="title">How to solve a Rubik's cube</h2>
-        <hr class="line first_line">
-        <p class="opening_text">This guide is designed for anyone to be able to pick up a 3x3 Rubik's cube and solve it in just 7 steps. You don't need to have any prior experience to use this guide.</p>
-        <p class="opening_text note">The only thing you have to do before using this guide is take a look at the “How to read notation” page. Without the notation it will be incredibly difficult. There is a notation reminder box in the top right corner of this page if you need it during the tutorial</p>
-
-        <h2>Step 1: White cross</h2>
-        <hr class="line">
-        <p>The first step in this guide is to solve a white cross. You can technically start with any color you want but this guide will start with white.</p>
-        <p>The most important thing to note is the other color on the edge matters. See the pictures below.</p>
-        <img src="images/incorrect_cross.png" alt = "image of an incorrect white cross">
-        <img src="images/correct_cross.png" alt = "image of a correct white cross">
-
-
-        <p>As you can see in the first picture, one of the white cross pieces looks solved but the other color isn't in the correct spot. The second picture you can see both colors match.</p>
-        <p>Here's a couple tips on how to insert the edges into the correct spots</p>
-
-        <img src="images/F2_cross_1.png" alt="cross insert image 1">
-        <img src="images/F2_cross_2.png" alt="cross insert image 2">
-        <!-- Fix this image. It looks squished for some reason -->
-        
-
-        <p class="note">Note: For the very first picture above white was facing up but for the rest of the solve keep the white side facing down</p>
-        <p class="note">Note: In all of the the images in this tutorial the side to the left will be the side that is facing us. In this case the red side is facing us.</p>
-
-        <p>This is the best way to put edge pieces in. Using the U face you can align the cross piece with its other color and then do an F2 to insert the cross piece.</p>
-        <img src="images/fliped_cross_piece.png" alt="flipped cross piece image">
-        <!-- Fix this image. It is off center -->
-
-        <p>This is the other possible case to get. The best way to do this is to find a cross piece that isnt solves yet, turn the cube so the cross piece's center color is facing you, line up the piece like this picture above and do these moves. Watch where the piece goes while to do the moves to see how it works.</p>
-        <p class="alg">U’ R’ F R</p>
-
-        <p>As you can see the piece was flipped over and put in the correct spot and all of our other cross pieces are still correct.</p>
-
-        <p>Your cube should look something like this</p>
-        <img src="images/solved_cross.png" alt="solved cross image">
-        <!-- Fix this image. It is off center -->
-
-        <h2>Step 2: White corners</h2>
-        <hr class="line">
-
-        <p>Our next step is to finish our first layer by putting in the corners. Much like the cross pieces the edge color does matter. Here's an example.</p>
-        <img src="images/incorrect_white_corner.png" alt="incorrect white corner image">
-        <img src="images/correct_white_corner.png" alt="correct white corner image">
-        <!-- Fix these pictures so they have white facing down -->
-
-        <p>you can see the first picture the corner is in the wrong spot. The edge colors don't match up to the cross pieces around it. The second picture is correct though because the edge colors match up to the cross pieces around it.</p>
-
-        <p>Here's a couple of ways to put in the corners. The first is pretty simple and it looks like this.</p>
-
-        <img src="images/R_U'_R_setup.png" alt="corner insert setup image">
-
-        <p>First we are going to move the corner out of the way like this</p>
-
-        <img src="images/R_U'_R_move_one.png" alt="corner insert move 1 image">
-        <p>The reason we do this is becase we need to move our cross piece up like this. If the corner was in the starting spot then it would move in a weird place and we couldn't put it where we want it</p>
-        <p>The important thing about this is to notice that to insert the corner you are going to have to move a cross piece. It is completely impossible to put a corner in without moving a cross piece. In this case we are going to lift our cross edge up like this</p>
-
-        <img src="images/R_U'_R_move_two.png" alt="corner insert move 2 image">
-
-        <p>Then we are going to move our corner right next to the cross piece to ‘stick’ the white ‘stickers’ together.</p>
-
-        <img src="images/R_U'_R_move_three.png" alt="corner insert move 3 image">
-
-        <p>Then we are going to put both pieces back into the first layer like this</p>
-
-        <img src="images/R_U'_R_solved.png" alt="corner insert solved image">
-
-        <p>This also works on the opposite side which looks like this</p>
-
-        <img src="images/L_U'_L_setup.png" alt="second corner insert setup image">
-
-        <p>This case works the exact same as the previous one but from the left side. In this case, make your green face your F face, then do these moves. Watch where the corner goes to get an idea of what we are doing</p>
-        <p class="alg">U' L' U L</p>
-
-        <p>The second case looks like this</p>
-
-        <img src="images/marked_U_facing_corner.png" alt="up facing corner image">
-        <!-- (//Not above it's target slot)  -->
-
-        <p>The previous cases had the corner facing the sides but this one is facing up which means the previous method won't work for this corner. The easiest thing to do is this. Get the corner above the spot it needs to go like in the image above</p>
-        <p>Then do these moves.</p>
-
-        <p class="alg">R U2 R’</p>
-
-        <p>Now the corner should be facing the side and you can just treat it like one of the above cases.</p>
-
-        <p>If the corner is in the wrong slot like in this picture</p>
-
-        <img src="images/wrong_corner_slot.png" alt="incorrect corner slot image">
-
-        <p>Then just put a different corner into the slot using the above methods and solve it like normal.</p>
-
-        <p>Your cube should look something like this now</p>
-
-        <img src="images/solved_white_layer.png" alt="white layer solved image">
-
-        <p>Congrats! You now have one layer solved!</p>
-
-        <h2>Step 3: Second layer</h2>
-        <hr class="line">
-
-        <p>Now we are going to move on to solving the second layer. There are 2 different cases you can get for this step and both are mirrors of each other.</p>
-
-        <p>The first one looks like this</p>
-
-        <img src="images/F2L_left.png" alt="f2l left case image">
-
-        <p>For this one make sure the center color and edge colors are the same like this</p>
-
-        <img src="images/marked_f2l_left.png" alt="highlighted f2l left case image">
-        <!-- Finish making this picture -->
-
-        <p>If they aren't the same then the piece won't solve correctly</p>
-
-        <p>Once your piece is set up like the first picture then do these moves</p>
-
-        <p class="alg">U’ L’ U L U F U’ F'</p>
-
-        <p class="note">Note: Use this <a href="notation_page/index.html">link</a> for a better visualization of the algorithms on this page and for some other tips like help memorizing the algorithms.</p>
-        <!-- Add a link to another page for help on how to recognize and learn this algorithm -->
-
-        <p>The second case is the same as the first but from the right side. It looks like this</p>
-
-        <img src="images/F2L_right.png" alt="f2l right case image">
-
-        <p class="alg">U R U’ R’ U’ F’ U F</p>
-
-        <p>The third case is a little different. It looks like this</p>
-
-        <img src="images/F2L_fliped_edge.png" alt="f2l flipped edge case image">
-
-        <p>As you can see the edge is in the right spot but flipped over. To do this one we just put a different edge into the slot and then solve the edge like normal. Either of the previous algorithms work for this case.</p>
-
-        <p>Your cube should look something like this</p>
-
-        <img src="images/F2L_solved.png" alt="solved f2l image">
-
-        <h2>Step 4: Yellow cross</h2>
-        <hr class="line">
-
-        <p>For this step we are going to make a cross out of the yellow pieces on top while keeping the rest of our cube solved. This step has 4 possible cases.</p>
-
-        <p>The first is the bar case and it looks like this</p>
-
-        <img src="images/yellow_cross_bar.png" alt="yellow cross bar image">
-
-        <p>To solve the cross with this case make sure the bar is set up like the picture above. If the bar is turned 90 degrees then the algorithm won't work.</p>
-
-        <p class="alg">F R U R’ U’ F’</p>
-
-        <p>The second case is the L case and it looks like this</p>
-
-        <img src="images/yellow_cross_L.png" alt="yellow l case image">
-
-        <p>To solve this turn the L shaped part to the back left just like in the picture and then do the last algorithm twice. </p>
-
-        <p>The third case is the dot case and looks like this</p>
-
-        <img src="images/yellow_cross_dot.png" alt="yellow cross dot case image">
-
-        <p>To do this case just do the algorithm once and it will give you a new case. Then solve that case like normal.</p>
-
-        <p>The 4th possible case is the best one. It is just solved for you.</p>
-
-        <p>Your cube should look like this now</p>
-
-        <img src="images/solved_yellow_cross.png" alt="solved yellow crosss image">
-
-        <h2>Step 5: Cross edges</h2>
-        <hr class="line">
-
-        <p>The next step is going to be moving the yellow cross edges into their solved positions.</p>
-
-        <img src="images/unpermuted_cross.png" alt="unpermuted cross image">
-
-        <p>As you can see from this picture the yellow cross is solved but the edge colors are not solved. This algorithm will swap the 2 edges marked in the picture below.</p>
-
-        <img src="images/sune_edge_swap.png" alt="sune edge swap image">
-
-        <p>Using this algorithm we can solve the 4 edges. To find which edges are already solved turn the U face until at least 2 edges are solved and then use this algorithm to swap edges until they are all solved.</p>
-
-        <p class="alg">R U2 R’ U’ R U’ R’</p>
-
-        <p>Your cube should look like this</p>
-
-        <img src="images/permuted_yellow_cross.png" alt="permuted yellow cross image">
-
-        <h2>Step 6: Yellow corner positions</h2>
-        <hr class="line">
-
-        <p>Next we are going to move our yellow corner pieces around until they are in the correct spot. They will be twisted still but that is on purpose.</p>
-
-        <p>Here's an example of a piece that is in the correct spot but still twisted and one that is in the wrong spot.</p>
-
-        <img src="images/correct_corner.png" alt="correct corner image">
-        <img src="images/incorrect_corner.png" alt="incorrect corner image">
-
-        <p>In the first you can see that the color of the corner piece matches the sides around it which means that it is in the correct spot on the cube. The second corners colors do not match the sides around it so we'll have to move it.</p>
-
-        <p>This algorithm will move 3 corners around. To use this algorithm put a solved Corner piece in the bottom right like in the picture below.</p>
-
-        <img src="images/nicklas_setup.png" alt="niklas setup image">
-        <!-- add arrows to the corner pieces to make it clear what the algorighm does -->
-
-        <p>The bottom right corner is the only one that won't move in this step. This algorithm will move the other 3 corners around. Keep moving the corners around until they are all in the correct spot.</p>
-
-        <p class="alg">L’ U R U’ L U R’</p>
-
-        <p>Your cube should now look something like this although yours might be slightly different.</p>
-
-        <img src="images/permuted_corners.png" alt="permuted corners image">
-
-        <h2>Step 7: Twist yellow corners</h2>
-        <hr class="line">
-
-        <p>The final step is to twist the corners that we just moved around. This is the step most people will mess up the most but just follow the moves EXACTLY and it will work just fine. For this step DO NOT rotate the cube around. The way the cube is facing matters for this step.</p>
-
-        <p>To start twist the U face so that an unsolved corner is in the bottom right position like this</p>
-
-        <img src="images/correcct_corner_twist_setup.png" alt="corner twist setup image">
-
-        <!-- add the picture for an incorrect setup -->
-
-        <p>Then do this algorithm over and over until that corner is solved</p>
-
-        <p class="alg">R’ D’ R D</p>
-
-        <p>Once that corner is solve it will look like the rest of the cube is messed up like shown in the picture down below</p>
-
-        <img src="images/twist_halfway.png" alt="twist algorithm halfway image">
-
-        <p>This is fine. Just don't rotate the cube around it it will solve itself.</p>
-
-        <p>Next use only U moves to put another unsolved corner in the bottom right spot and use the algorithm over and over until that corner solves. Repeat for all the corners in the U face. Once the last corner is solved the rest of the cube should also be solved.</p>
-
-        <img src="images/solved.png" alt="solve rubik's cube image">
-
-        <p>Congrats! You solved a rubik's cube.</p>
-
-        <p>For help on memorizing the algorithms, more visual forms of the algorithms, or an example solve see the extra tips page.</p>
-    </section>
-    <div class="border_two"></div>
-    </div>
-
-<footer>
-    <p>Puzzle Masters &copy; 2024 - Joey Moore</p>
-    <p>Images sourced from <a href="https://rubikscu.be/">https://rubikscu.be/</a></p>
-</footer>
-
-<script>
-    function openNav() {
-      document.getElementById("sidebar").style.width = "15%";
-      document.getElementById("sidebar").style.border = "7px solid black";
-    }
-    
-    function closeNav() {
-      document.getElementById("sidebar").style.width = "0";
-      document.getElementById("sidebar").style.border = "none"
-    }
-
-    document.getElementById("button_div").className = "button_div_relative";
-    window.onscroll = function() {sidebarButton()}
-
-    function sidebarButton(){
-        var logoheight = document.querySelector("#logo");
-            var h;
-        if (document.documentElement.scrollTop > logoheight.clientHeight) {
-            document.getElementById("button_div").className = "button_div_fixed";
-        } else {
-            document.getElementById("button_div").className = "button_div_relative";
-
-            h = document.getElementById("button_div").style.top = logoheight.clientHeight;
-            // ask bro. Christenson how to do this correctly
+    <footer>
+        <p>Puzzle Masters &copy; 2024 - Joey Moore</p>
+        <p>Images sourced from <a href="https://rubikscu.be/">https://rubikscu.be/</a></p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "15%";
+            document.getElementById("sidebar").style.border = "7px solid black";
         }
-    }
-</script>
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("sidebar").style.border = "none"
+        }
+
+        document.getElementById("button_div").className = "button_div_relative";
+        window.onscroll = function () { sidebarButton() }
+
+        function sidebarButton() {
+            var logoheight = document.querySelector("#logo");
+            var h;
+            if (document.documentElement.scrollTop > logoheight.clientHeight) {
+                document.getElementById("button_div").className = "button_div_fixed";
+            } else {
+                document.getElementById("button_div").className = "button_div_relative";
+
+                h = document.getElementById("button_div").style.top = logoheight.clientHeight;
+                // ask bro. Christenson how to do this correctly
+            }
+        }
+    </script>
 </body>
+
 </html>
